@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Pizzas",
+        "content": [
+            {
+                "id": 1,
+                "nombre": "Pizza Pepperoni",
+                "img": "pizza-1",
+                "precio": 20900
+            },
+            {
+                "id": 2,
+                "nombre": "Pizza Venezolana",
+                "img": "pizza-2",
+                "precio": 18000
+            },
+            {
+                "id": 3,
+                "nombre": "Pizza Mexicana",
+                "img": "pizza-3",
+                "precio": 29900
+            },
+            {
+                "id": 4,
+                "nombre": "Pizza Hawaiana",
+                "img": "pizza-4",
+                "precio": 24900
+            },
+            {
+                "id": 5,
+                "nombre": "Pizza Vegetariana",
+                "img": "pizza-5",
+                "precio": 24900
+            }
+        ],
+        "color": "danger"
+    },
+    {
+        "name": "Refrescos",
+        "content": [
+            {
+                "id": 1,
+                "nombre": "Coca-Cola",
+                "img": "coca-cola",
+                "precio": 5500
+            },
+            {
+                "id": 2,
+                "nombre": "Sprite",
+                "img": "sprite",
+                "precio": 3800
+            },
+            {
+                "id": 3,
+                "nombre": "Big-Cola",
+                "img": "big-cola",
+                "precio": 3900
+            },
+            {
+                "id": 4,
+                "nombre": "Pepsi",
+                "img": "pepsi",
+                "precio": 4300
+            }
+        ],
+        "color": "primary"
+    },
+    {
+        "name": "Postres",
+        "content": [
+            {
+                "id": 1,
+                "nombre": "Pudin de Chocolate",
+                "img": "pudin-de-chocolate",
+                "precio": 5000
+            },
+            {
+                "id": 2,
+                "nombre": "Postre de Limón",
+                "img": "postre-de-limon",
+                "precio": 7000
+            },
+            {
+                "id": 3,
+                "nombre": "Galletas Butter",
+                "img": "galletas-butter",
+                "precio": 5800
+            },
+            {
+                "id": 4,
+                "nombre": "Helado de Cereza",
+                "img": "helado-de-cereza",
+                "precio": 2500
+            },
+            {
+                "id": 5,
+                "nombre": "Muffin",
+                "img": "muffin",
+                "precio": 9000
+            }
+        ],
+        "color": "success"
+    }
+]

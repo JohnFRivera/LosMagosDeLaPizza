@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Los Magos de la Pizza</title>
+</head>
+<body>
+    <nav class="container-fluid bg-danger p-3 shadow">
+        <div class="row">
+            <div class="col-auto">
+                <img src="./assets/media/logo.png" alt="logo" style="width: 70px;">
+            </div>
+            <div class="col-auto d-flex align-items-center"><a href="./index.html" class="text-decoration-none text-white display-6 fs-5 fw-semibold">Inicio</a></div>
+            <div class="col-auto d-flex align-items-center">
+                <a class="text-decoration-none text-white display-6 fs-5 fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onclick="AbrirProductos('Pizzas')">Pizzas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item"  onclick="AbrirProductos('Refrescos')">Refrescos</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item"  onclick="AbrirProductos('Postres')">Postres</a></li>
+                  </ul>
+            </div>
+            <div class="col-3 d-flex align-items-center">
+                <input type="text" class="form-control" placeholder="Buscar" id="">
+                <button class="btn btn-warning ms-2">IR</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-auto">
+            <div class="col col-lg-9" id="contentProductos">
+                
+            </div>
+            <div class="col col-lg-3">
+                <div class="row row-cols-1">
+                    <div class="col">
+                        <div class="p-2 bg-black bg-opacity-10 border rounded-3 m-3 shadow">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="d-inline">Factura</h4>
+                                <button class="d-inline btn btn-link" id="btnBorrarProductos">Borrar</>
+                            </div>
+                            <hr>
+                            <table class="table table-hover">
+                                <tbody id="tableFactura">
+                                    
+                                </tbody>
+                            </table>
+                            <hr>
+                            <button class="btn btn-warning w-100" id="btnLiquidarFactura">Liquidar Factura</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-2 bg-black bg-opacity-10 border rounded-3 m-3 shadow">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="d-inline">Facturas Liquidadas</h4>
+                                <button class="d-inline btn btn-link" id="btnBorrarFacturas">Borrar</>
+                            </div>
+                            <hr>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>#</th>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableFacturasLiquidadas">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
